@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap 4 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <link rel="stylesheet" href="Assets/style.css">
     <title>MyPortfolio</title>
 </head>
 <body>
@@ -21,16 +18,16 @@
       <nav>
         <img id="myphoto" src="/Assets/Images/me.jpg" alt="My Photo">
         <ul>
-          <li>About Me</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li><a href="#aboutme">About Me</li></a>
+          <li><a href="#projects">Projects</li></a>
+          <li><a href="#contact">Contact</li></a>
         </ul>
       </nav>
       <div class="hero-area">
         <div class="hero-text">
         <h1>Mohammad Al-Besani</h1>    
         <p>Aspiring Frontend Webdeveloper</p>
-        <button class="">About Me</button>
+        <button class=""> <a href="#aboutme"> About Me</a></button>
         </div>
         <div class="socials">
           <a href="https://www.facebook.com/mohamad.besani/"><i class="fab fa-facebook"></i></a>
@@ -39,21 +36,46 @@
         </div>
       </div>
     </section>
-    <section class="sub-section">
+    <section class="sub-section" id="aboutme">
       <div class="information">
         <h2>About Me</h2>
         <p>I am Motivated and aspiring Web-Developer studying Wirtschaftsinformatik at the University of Applied Sciences - FH Aachen</p>
       </div>
     </section>
-    <section class="project-section">
+    <hr>
+    <section class="project-section" id="projects">
       <h2>Projects</h2>
       <div class="project-container">
-        <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="project-card"></div>
+        <div class="project-card">
+          <img class="project-img"src="/Assets/Images/Tincat.PNG" alt="Tincat Project">
+          <h3>TinCat Project</h3>
+          <p class="subtext">Some Text about the Project</p>
+          <hr>
+          <p class="subtext"><a class="project-link" href="https://mbesani.github.io/tinCat.github.io/"> View Here</p></a>
+        </div>
+        <div class="project-card">
+          <img class="project-img"src="/Assets/Images/Todo.PNG" alt="ToDoList Project">
+          <h3>ToDo List Project</h3>
+          <p class="subtext">Some Text about the Project</p>
+          <hr>
+          <p class="subtext"><a class="project-link" href="https://mbesani.github.io/ToDoList/">View Here</p></a>
+        </div>
+        <div class="project-card">
+          <img class="project-img"src="/Assets/Images/Simon.PNG" alt="TheSimonGame Project">
+          <h3>TheSimonGame Project</h3>
+          <p class="subtext">Some Text about the Project</p>
+          <hr>
+          <p class="subtext"><a class="project-link" href="https://mbesani.github.io/TheSimonGame/">View Here</p></a>
+        </div>
       </div>
     </section>
-    <footer></footer>
-    <script src="/Assets/main.js"></script>
+    <footer id="contact">
+      <h2>Contact me</h2>
+      <p><i class="fas fa-envelope-square"></i>mohamad98besani@gmail.com</p>
+      <form action="https://formsubmit.co/mohamad98besani@gmail.com" method="POST">
+        <input class="message" placeholder="Your Message" type="text" name="name" required><br><br>
+        <input class= "email" placeholder="Email" type="email" name="email" required><br>
+        <button type="submit">Send</button>
+      </form>
 </body>
 </html>
